@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="A special birthday celebration website made with love for Sara. Filled with polaroid memories, confetti, and warm wishes.">
+  <title>Happy Birthday Sara! 🌸✨</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Dreamy Pastel Glow -->
+  <div class="ambient-glow">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Background Canvas for Stars & Floating Hearts -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Sound Toggle Button -->
+  <button id="sound-toggle" class="sound-toggle-btn" title="Toggle celebration chimes" aria-label="Toggle sound">
+    🔔 Sound: On
+  </button>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-pill">
+      <span class="sparkle-icon">✨</span>
+      <span>Celebrating Our Favorite Nakama</span>
+      <span class="sparkle-icon">👒</span>
+    </div>
+
+    <h1 class="hero-title">
+      Happy Birthday<br>
+      <span class="name-gradient">Sara!</span> 🌸
+    </h1>
+
+    <p class="hero-sub">
+      To the girl who brings radiant sunshine, endless laughs, aesthetic vibes,
+      and <strong>pure warmth wherever she goes.</strong><br>
+      Today and every day, you deserve the whole world! 🎂💖
+    </p>
+
+    <div class="hero-actions">
+      <a href="#gallery" class="btn-primary">
+        <span>📸 View Memories</span>
+      </a>
+      <a href="#message" class="btn-secondary">
+        <span>💌 Read Birthday Letter</span>
+      </a>
+    </div>
+
+    <div class="scroll-indicator" onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' })">
+      <span>Scroll for memories</span>
+      <svg class="scroll-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ── POLAROID GALLERY SECTION ── -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <span class="section-tag">✨ The Photo Reel ✨</span>
+      <h2 class="section-title">Moments & Memories</h2>
+      <p class="section-desc">
+        A snapshot reel of laughter, adventures, and milestones. Tap any photo to take a closer look!
+      </p>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Polaroid items injected dynamically via script.js -->
+    </div>
+  </section>
+
+  <!-- ── BIRTHDAY LETTER / WISHES SECTION ── -->
+  <section class="message-section" id="message">
+    <div class="letter-container">
+
+      <!-- One Piece Straw Hat Sticker Badge -->
+      <div class="op-sticker op-sticker-hat" title="Straw Hat Pirates Nakama Badge!">
+        <svg viewBox="0 0 64 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="32" cy="27" rx="30" ry="7" fill="#F6C85F" stroke="#333" stroke-width="2" />
+          <path d="M18 25C18 12 24 8 32 8C40 8 46 12 46 25Z" fill="#FCD34D" stroke="#333" stroke-width="2" />
+          <path d="M18 22C23 20 41 20 46 22V25C41 23 23 23 18 25V22Z" fill="#EF4444" />
+        </svg>
+        <span>Nakama Forever 👒</span>
+      </div>
+
+      <!-- One Piece Chopper Sticker Badge -->
+      <div class="op-sticker op-sticker-chopper" title="Chopper: I'm not happy at all, you jerk! 🌸">
+        <span>🌸 Kono Yarō~ 🦌</span>
+      </div>
+
+      <span class="letter-badge-icon">🎂</span>
+      <h2 class="letter-title">A Note for the Birthday Girl</h2>
+
+      <div class="letter-body">
+        <p>
+          <strong>Dearest Sara,</strong><br>
+          Sach bolu toh, kisne socha tha ki ek random group chat mein shuru hui baat itni pyaari aur special dosti ban
+          jayegi!✨
+          Online mile the hum uss GC mein, but today you're honestly one of the coolest people.
+        </p>
+        <p>
+          Even though hum abhi tak real life mein kabhi nahi mile, but I really, really wish ki hum bohot jald milein!
+          InshaAllah whenever we meet, it’s going to be so iconic. 🫂💫
+        </p>
+        <p>
+          Aur haan, let me just state facts — you are truly <strong>so gorgeous</strong>, aur aapki <strong>voice is so
+            soothing and beautiful</strong>! 🎙️✨ Listening to you talk is pure comfort vibes.
+        </p>
+        <p>
+          On your special day, I pray that <strong>Allah (SWT) grants you endless blessings, keeps you smiling always,
+            and makes you immensely successful</strong> in everything you chase in life. May all your duas be answered
+          and this year be your happiest one yet! 🤲🌸
+        </p>
+
+        <!-- One Piece Arabasta Friendship Mark Banner -->
+        <div class="nakama-quote">
+          <span>👒 "No matter where we are, we are always NAKAMA!"</span>
+          <span class="nakama-x">✖️</span>
+        </div>
+
+        <div class="letter-signature">
+          With lots of love, du'as & laughs, <br>
+          From your favorite GC friend 💖
+        </div>
+      </div>
+
+      <div class="celebration-btn-wrap">
+        <button class="btn-celebrate" onclick="launchFireworks()" id="celebrate-btn">
+          <span>✨ Shower Sara with Love! 🎆</span>
+        </button>
+        <span class="celebrate-hint">Click for fireworks, pastel confetti & celebratory chimes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LIGHTBOX MODAL ── -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Preview">
+    <div class="lightbox-card">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close photo preview">✕</button>
+
+      <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+      <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next photo">›</button>
+
+      <div class="lightbox-img-wrap">
+        <img src="" alt="Sara's Memory" id="lightbox-img" class="lightbox-img">
+      </div>
+
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    Crafted with 💖 for <strong>Sara</strong> &nbsp;·&nbsp; Certified Nakama 👒 &nbsp;·&nbsp; Celebrating another
+    fabulous year ✨
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
